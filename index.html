@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/datepicker.min.css">
+   
+</head>
+<body>
+    
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6 offset-3">
+
+                <form action="">
+                    <input type="text" id="calendar" class="form-control">
+               
+<!-- 
+                     <input type="text"
+                        
+                        data-min-view="months"
+                        data-view="months"
+                        data-date-format="MM yyyy" /> -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- http://t1m0n.name/air-datepicker/docs/index-ru.html -->
+    <!-- https://air-datepicker.com/ru -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script>
+        $(function() {
+            $('#calendar').datepicker({
+                multipleDates: 2,
+                multipleDatesSeparator: " - ",
+                minDate:new Date(),
+                toggleSelected: true,
+                showOtherMonths: true,
+                startDate: new Date(),
+                clearButton: true,
+
+
+
+
+
+            });
+
+
+
+        })
+
+
+//         var myDatepicker = $('#calendar').datepicker().data('datepicker');
+
+//             myDatepicker selectDate(date) {
+//                 multipleDates: false,
+// };
+
+
+
+    </script>
+</body>
+</html>
